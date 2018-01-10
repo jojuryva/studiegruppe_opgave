@@ -6,6 +6,24 @@ body {
   margin: 0;
   background-color: white; }
 
+.fa-pencil {
+  color: #e84545; }
+
+.fa-desktop {
+  color: #e84545; }
+
+.fa-lightbulb-o {
+  color: #e84545; }
+
+.fa-file-code-o {
+  color: #e84545; }
+
+.fa-suitcase {
+  color: #e84545; }
+
+.fa-cloud-download {
+  color: #e84545; }
+
 .works-container {
   position: relative;
   width: 100%; }
