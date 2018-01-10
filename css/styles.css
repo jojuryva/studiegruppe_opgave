@@ -6,19 +6,40 @@ body {
   margin: 0;
   background-color: white; }
 
-h1, h2, h3, h4, h5, h6 {
+.works-container {
+  position: relative;
+  width: 100%; }
+
+.works_img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #e84545; }
+
+.works-container:hover .overlay {
+  opacity: 0.7; }
+
+.works_txt {
+  color: white; }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0; }
 
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style-position: inside; }
-
-li {
-  margin: 0; }
-
 p {
+  font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0; }
 

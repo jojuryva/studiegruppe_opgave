@@ -19,6 +19,36 @@ body {
 //Features - Celina
 
 //Works - Sabine
+.works-container{
+  position: relative;
+  width: 100%;
+}
+.works_img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $red;
+}
+
+.works-container:hover .overlay{
+  opacity: 0.7;
+}
+
+.works_txt{
+  color: white;
+}
 
 //Our team- Cecilie
 
@@ -32,22 +62,14 @@ body {
 
 
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: 'Open Sans', sans-serif;
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
 }
 
-ul, ol {
-  margin: 0; // Ingen ydre margen fra lister
-  padding: 0; // Ingen indre margen fra lister
-  list-style-position: inside; // List punkter står på linje
-}
-
-li {
-  margin: 0; // Ingen ydre margen fra listpunkter
-}
-
 p {
+  font-family: 'Raleway', sans-serif;
   margin: 0; // Ingen ydre margen fra paragraffer
   padding: 0; // Ingen indre margen fra paragraffer
 }
