@@ -23,10 +23,14 @@ body {
   position: relative;
   width: 100%;
 }
+
 .works_img{
   display: block;
   width: 100%;
   height: auto;
+  border: solid;
+  border-width: thin;
+  border-color: white;
 }
 
 .overlay{
@@ -43,11 +47,16 @@ body {
 }
 
 .works-container:hover .overlay{
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .works_txt{
   color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 //Our team- Cecilie
@@ -83,10 +92,24 @@ img {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  //Works - Sabine
+  .works-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .works-container{
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+  //Works - Sabine
+  .works-container {
+    width: 25%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
