@@ -13,7 +13,10 @@ body {
 .works_img {
   display: block;
   width: 100%;
-  height: auto; }
+  height: auto;
+  border: solid;
+  border-width: thin;
+  border-color: white; }
 
 .overlay {
   position: absolute;
@@ -28,10 +31,15 @@ body {
   background-color: #e84545; }
 
 .works-container:hover .overlay {
-  opacity: 0.7; }
+  opacity: 0.9; }
 
 .works_txt {
-  color: white; }
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -47,5 +55,17 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
+
+@media screen and (min-width: 768px) {
+  .works-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+
+  .works-container {
+    width: 50%; } }
+@media screen and (min-width: 992px) {
+  .works-container {
+    width: 25%; } }
 
 /*# sourceMappingURL=styles.css.map */
