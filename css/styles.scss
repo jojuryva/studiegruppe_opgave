@@ -18,37 +18,37 @@ body {
 
 //Features - Celina
 
-.fa-pencil{
+.fa-pencil {
   color:$red;
 }
 
-.fa-desktop{
+.fa-desktop {
   color:$red;
 }
 
-.fa-lightbulb-o{
+.fa-lightbulb-o {
   color:$red;
 }
 
-.fa-file-code-o{
+.fa-file-code-o {
   color:$red;
 }
 
-.fa-suitcase{
+.fa-suitcase {
   color:$red;
 }
 
-.fa-cloud-download{
+.fa-cloud-download {
   color:$red;
 }
 
 //Works - Sabine
-.works-container{
+.works-container {
   position: relative;
   width: 100%;
 }
 
-.works_img{
+.works_img {
   display: block;
   width: 100%;
   height: auto;
@@ -57,7 +57,7 @@ body {
   border-color: white;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -70,11 +70,11 @@ body {
   background-color: $red;
 }
 
-.works-container:hover .overlay{
+.works-container:hover .overlay {
   opacity: 0.9;
 }
 
-.works_txt{
+.works_txt {
   color: white;
   position: absolute;
   top: 50%;
@@ -85,15 +85,80 @@ body {
 
 //Our team- Cecilie
 
-//estimonials - Joachim
+//Testimonials - Joachim
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.slide_box {
+  width: 100%;
+  height: 450px;
+  background-color: #53354a;
+}
+
+.quote_box {
+  height: 205px;
+}
+
+.quote {
+  color: white;
+  font-size: 26px;
+  font-style: italic;
+  text-align: center;
+}
+
+.author {
+  color: white;
+  text-align: center;
+}
 //Downloads - Joachim
 
 //Under box - Celina
 
 //Footer - Celina
-
-
 
 h1 {
   font-family: 'Open Sans', sans-serif;
@@ -116,30 +181,44 @@ img {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
   //Works - Sabine
-  .works-flex-container{
+  .works-flex-container {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
 
-  .works-container{
+  .works-container {
     width: 50%;
   }
-}
 
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
-  //Works - Sabine
-  .works-container {
-    width: 25%;
+  //Testimonials - Joachim
+  .slide_box {
+    width: 100%;
+    height: 450px;
+    background-color: #53354a;
+
   }
 }
 
-@media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-}
+  @media screen and (min-width: 992px) {
+    // Alt der ændres i tablet liggende fra mobil og tablet stående
 
-@media print {
-  // Alt der gælder for print specifikt
-}
+    //Works - Sabine
+    .works-container {
+      width: 25%;
+    }
+
+    //Testimonials - Joachim
+    .quote_box {
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  }
+
+  @media print {
+    // Alt der gælder for print specifikt
+  }
