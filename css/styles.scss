@@ -185,9 +185,8 @@ img {
 
 // Alt der ændres i tablet stående fra mobil
 @media screen and (min-width: 768px) {
-
   //Works - Sabine
-  .works-flex-container {
+  .works {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
