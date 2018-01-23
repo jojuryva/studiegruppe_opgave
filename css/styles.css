@@ -6,6 +6,20 @@ body {
   margin: 0;
   background-color: white; }
 
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
 .fa-pencil {
   color: #e84545; }
 
@@ -64,10 +78,8 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto; }
+.txt_box {
+  height: 200px; }
 
 .dot {
   cursor: pointer;
@@ -98,13 +110,10 @@ body {
     opacity: 0.4; }
   to {
     opacity: 1; } }
-.slide_box {
-  width: 100%;
-  height: 450px;
-  background-color: #53354a; }
-
 .quote_box {
-  height: 205px; }
+  width: 100%;
+  height: 250px;
+  background-color: #53354a; }
 
 .quote {
   color: white;
@@ -116,20 +125,11 @@ body {
   color: white;
   text-align: center; }
 
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0; }
-
-p {
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-  padding: 0; }
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
+.dl {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
 
 @media screen and (min-width: 768px) {
   .works {
@@ -140,12 +140,46 @@ img {
   .works-container {
     width: 50%; }
 
-  .slide_box {
+  .txt_box {
+    margin: 20px;
+    height: 150px; }
+
+  .quote_box {
     width: 100%;
-    height: 450px;
+    height: 250px;
     background-color: #53354a; } }
 @media screen and (min-width: 992px) {
   .works-container {
-    width: 25%; } }
+    width: 25%; }
+
+  .mySlides {
+    display: flex;
+    width: 100%;
+    height: 250px; }
+
+  .txt_box {
+    margin: 2.5px;
+    height: 200px; }
+
+  .quote_box {
+    width: 50%;
+    height: auto; }
+
+  .testimonial_img {
+    width: 50%;
+    height: auto; } }
+@media screen and (min-width: 1200px) {
+  .mySlides {
+    display: flex;
+    width: 100%;
+    height: 310px; }
+
+  .quote_box {
+    width: 50%;
+    height: auto; }
+
+  .testimonial_img {
+    width: 50%;
+    height: auto; } }
 
 /*# sourceMappingURL=styles.css.map */

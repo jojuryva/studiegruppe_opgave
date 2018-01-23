@@ -14,9 +14,27 @@ body {
   background-color: white;
 }
 
-//Header og forside - Adem
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
+}
 
-//Features - Celina
+p {
+  font-family: 'Raleway', sans-serif;
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+}
+
+// Sikrer billeder er responsive
+img {
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+
+// Header og forside - Adem
+
+// Features - Celina
 .fa-pencil {
   color:$red;
 }
@@ -41,7 +59,7 @@ body {
   color:$red;
 }
 
-//Works - Sabine
+// Works - Sabine
 .works-container{
   position: relative;
   overflow: hidden;
@@ -88,13 +106,11 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
-//Our team- Cecilie
+// Our team - Cecilie
 
-//Testimonials - Joachim
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+// Testimonials - Joachim
+.txt_box {
+  height: 200px;
 }
 
 .dot {
@@ -137,14 +153,10 @@ body {
   }
 }
 
-.slide_box {
-  width: 100%;
-  height: 450px;
-  background-color: #53354a;
-}
-
 .quote_box {
-  height: 205px;
+  width: 100%;
+  height: 250px;
+  background-color: #53354a;
 }
 
 .quote {
@@ -158,30 +170,20 @@ body {
   color: white;
   text-align: center;
 }
-//Downloads - Joachim
 
-//Under box - Celina
+// Download - Joachim
 
-//Footer - Celina
 
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0; // Ingen ydre margen fra overskrifter
-  padding: 0; // Ingen indre margen fra overskrifter
+.dl {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-p {
-  font-family: 'Raleway', sans-serif;
-  margin: 0; // Ingen ydre margen fra paragraffer
-  padding: 0; // Ingen indre margen fra paragraffer
-}
+// Under box - Celina
 
-// Sikrer billeder er responsive
-img {
-  display: block; // Billeder er et element (laver linjeskift)
-  max-width: 100%; // Bredde må maks fylde 100%
-  height: auto; // Højden skal tilpasse sig
-}
+// Footer - Celina
 
 // Alt der ændres i tablet stående fra mobil
 @media screen and (min-width: 768px) {
@@ -196,12 +198,16 @@ img {
     width: 50%;
   }
 
-  //Testimonials - Joachim
-  .slide_box {
-    width: 100%;
-    height: 450px;
-    background-color: #53354a;
+  // Testimonials - Joachim
+  .txt_box {
+    margin: 20px;
+    height: 150px;
+  }
 
+  .quote_box {
+    width: 100%;
+    height: 250px;
+    background-color: #53354a;
   }
 }
 
@@ -213,12 +219,48 @@ img {
     }
 
     //Testimonials - Joachim
-    .quote_box {
+    .mySlides {
+      display: flex;
+      width: 100%;
+      height: 250px;
     }
+
+    .txt_box {
+      margin: 2.5px;
+      height: 200px;
+    }
+
+    .quote_box {
+      width: 50%;
+      height: auto;
+    }
+
+    .testimonial_img {
+      width: 50%;
+      height: auto;
+    }
+
   }
 
 // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
   @media screen and (min-width: 1200px) {
+    //Testimonials - Joachim
+
+    .mySlides {
+      display: flex;
+      width: 100%;
+      height: 310px;
+    }
+
+    .quote_box {
+      width: 50%;
+      height: auto;
+    }
+
+    .testimonial_img {
+      width: 50%;
+      height: auto;
+    }
   }
 
   @media print {
