@@ -113,7 +113,8 @@ img {
 .quote_box {
   width: 100%;
   height: 250px;
-  background-color: #53354a; }
+  background-color: #53354a;
+  padding: 10px; }
 
 .quote {
   color: white;
@@ -126,10 +127,35 @@ img {
   text-align: center; }
 
 .dl {
-  position: relative;
-  min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+
+.dl_over {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0 10px 0 10px; }
+
+.dl_under {
+  margin: 0 20px 0 20px;
+  font-weight: bold;
+  font-size: 14px; }
+
+.dl_btn {
+  font-family: "Open Sans", sans-serif;
+  background-color: #e84545;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 15px 50px 15px 50px;
+  font-weight: bold; }
+
+.dl_btn:hover {
+  background-color: red; }
 
 @media screen and (min-width: 768px) {
   .works {
@@ -170,9 +196,8 @@ img {
     height: auto; } }
 @media screen and (min-width: 1200px) {
   .mySlides {
-    display: flex;
     width: 100%;
-    height: 310px; }
+    height: auto; }
 
   .quote_box {
     width: 50%;
@@ -180,6 +205,6 @@ img {
 
   .testimonial_img {
     width: 50%;
-    height: auto; } }
+    height: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */
