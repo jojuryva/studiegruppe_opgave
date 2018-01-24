@@ -46,9 +46,7 @@ img {
 .works_img {
   display: block;
   height: 100%;
-  border: solid;
-  border-width: thin;
-  border-color: white; }
+  border: solid thin white; }
 
 .works_img img {
   box-sizing: border-box;
@@ -164,7 +162,12 @@ img {
     width: 100%; }
 
   .works-container {
-    width: 50%; }
+    width: 50%;
+    overflow: hidden; }
+
+  .works_img {
+    height: 50vh;
+    width: 150%; }
 
   .txt_box {
     margin: 20px;
@@ -177,6 +180,9 @@ img {
 @media screen and (min-width: 992px) {
   .works-container {
     width: 25%; }
+
+  .works_img {
+    width: 200%; }
 
   .mySlides {
     display: flex;
@@ -195,6 +201,9 @@ img {
     width: 50%;
     height: auto; } }
 @media screen and (min-width: 1200px) {
+  .works_img {
+    width: 150%; }
+
   .mySlides {
     width: 100%;
     height: auto; }

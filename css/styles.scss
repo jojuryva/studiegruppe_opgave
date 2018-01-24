@@ -69,9 +69,7 @@ img {
 .works_img{
   display: block;
   height: 100%;
-  border: solid;
-  border-width: thin;
-  border-color: white;
+  border: solid thin white;
 }
 
 .works_img img{
@@ -105,6 +103,7 @@ img {
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 
 // Our team - Cecilie
 
@@ -226,6 +225,12 @@ img {
 
   .works-container {
     width: 50%;
+    overflow: hidden;
+  }
+
+  .works_img {
+    height: 50vh;
+    width: 150%;
   }
 
   // Testimonials - Joachim
@@ -246,6 +251,10 @@ img {
     //Works - Sabine
     .works-container {
       width: 25%;
+    }
+
+    .works_img{
+      width: 200%;
     }
 
     //Testimonials - Joachim
@@ -273,9 +282,13 @@ img {
   }
 
 // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-  @media screen and (min-width: 1200px) {
-    //Testimonials - Joachim
+  @media screen and (min-width: 1200px) {    //Works - Sabine
+    //Works - Sabine
+    .works_img{
+      width: 150%;
+    }
 
+    //Testimonials - Joachim
     .mySlides {
       width: 100%;
       height: auto;
