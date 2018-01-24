@@ -64,12 +64,17 @@ img {
   position: relative;
   overflow: hidden;
   width: 100%;
+  border: solid thin white;
 }
 
 .works_img{
   display: block;
   height: 100%;
-  border: solid thin white;
+  transition: transform .2s; /* Animation */
+}
+
+.works_img:hover{
+  transform: scale(1.2);
 }
 
 .works_img img{
@@ -192,15 +197,16 @@ img {
     flex-wrap: wrap;
     width: 100%;
   }
-
   .works-container {
     width: 50%;
     overflow: hidden;
   }
-
   .works_img {
     height: 50vh;
     width: 150%;
+  }
+  .works_txt{
+    left: 37%;
   }
 
   // Testimonials - Joachim
@@ -222,9 +228,11 @@ img {
     .works-container {
       width: 25%;
     }
-
     .works_img{
       width: 200%;
+    }
+    .works_txt{
+      left: 30%;
     }
 
     //Testimonials - Joachim
@@ -256,6 +264,9 @@ img {
     //Works - Sabine
     .works_img{
       width: 150%;
+    }
+    .works_txt{
+      left: 37%;
     }
 
     //Testimonials - Joachim

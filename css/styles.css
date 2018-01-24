@@ -41,12 +41,17 @@ img {
 .works-container {
   position: relative;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  border: solid thin white; }
 
 .works_img {
   display: block;
   height: 100%;
-  border: solid thin white; }
+  transition: transform .2s;
+  /* Animation */ }
+
+.works_img:hover {
+  transform: scale(1.2); }
 
 .works_img img {
   box-sizing: border-box;
@@ -143,6 +148,9 @@ img {
     height: 50vh;
     width: 150%; }
 
+  .works_txt {
+    left: 37%; }
+
   .txt_box {
     margin: 20px;
     height: 150px; }
@@ -157,6 +165,9 @@ img {
 
   .works_img {
     width: 200%; }
+
+  .works_txt {
+    left: 30%; }
 
   .mySlides {
     display: flex;
@@ -177,6 +188,9 @@ img {
 @media screen and (min-width: 1200px) {
   .works_img {
     width: 150%; }
+
+  .works_txt {
+    left: 37%; }
 
   .mySlides {
     display: flex;
