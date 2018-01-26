@@ -11,6 +11,9 @@ h1, h2, h3 {
   margin: 0;
   padding: 0; }
 
+h4 {
+  font-family: 'Raleway', sans-serif; }
+
 p {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -37,6 +40,9 @@ img {
 
 .fa-cloud-download {
   color: #e84545; }
+
+.features {
+  text-align: center; }
 
 .works-container {
   position: relative;
@@ -80,6 +86,70 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
+
+.flex-container {
+  flex-wrap: wrap; }
+
+.describtion {
+  font-size: 14px;
+  Color: grey;
+  line-height: 23px; }
+
+.Team1 {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px; }
+
+.Team2 {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px; }
+
+.Team3 {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px; }
+
+.Team4 {
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px; }
+
+.Name {
+  font-size: 22px;
+  line-height: 25px;
+  font-family: 'Helvetica', sans-serif; }
+
+.Job {
+  Color: #e84545;
+  font-size: 14px;
+  line-height: 20px; }
+
+.fa-facebook {
+  color: lightgray;
+  border: solid 1px;
+  font-size: 18px;
+  padding: 8px; }
+
+.fa-twitter {
+  color: lightgray;
+  border: solid 1px;
+  font-size: 18px;
+  padding: 8px; }
+
+.fa-linkedin {
+  color: lightgray;
+  border: solid 1px;
+  font-size: 18px;
+  padding: 8px; }
+
+.fa-google-plus {
+  color: lightgray;
+  border: solid 1px;
+  font-size: 18px;
+  padding: 8px; }
+
+.fa-dribbble {
+  color: lightgray;
+  border: solid 1px;
+  font-size: 18px;
+  padding: 8px; }
 
 .txt_box {
   height: 200px; }
@@ -160,6 +230,60 @@ img {
 .dl_btn:hover {
   background-color: red; }
 
+.underbox {
+  background-color: #3a3e64;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+h3 {
+  font-size: 14pt;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: white; }
+
+h5 {
+  font-weight: normal;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  color: #afb0bc; }
+
+.icons {
+  display: flex;
+  justify-content: center;
+  line-height: 35px; }
+
+.icons a {
+  color: white;
+  text-decoration: none; }
+
+.icons a:hover {
+  color: #e84545; }
+
+.icon {
+  border: solid 1px white;
+  width: 35px;
+  height: 35px; }
+
+.fa-heart {
+  color: #e84545; }
+
+.footer {
+  color: #808080;
+  background-color: #313454;
+  bottom: 0;
+  text-align: center;
+  height: 98px;
+  position: relative;
+  padding: 25px; }
+
+.footer a {
+  color: white;
+  text-decoration: none; }
+
+.footer a:hover {
+  color: #e84545; }
+
 @media screen and (min-width: 768px) {
   .works {
     display: flex;
@@ -194,6 +318,47 @@ img {
 
   .works_txt {
     left: 30%; }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    max-width: none;
+    padding-top: 40px; }
+
+  .underbox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center; }
+
+  .flex-features {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    max-width: none;
+    padding-top: 39px;
+    margin-right: auto;
+    margin-left: auto; }
+
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center; }
+
+  .flex-team {
+    display: inline-flex;
+    height: 600px;
+    max-width: 22%;
+    margin-left: 35px; }
+
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
 
   .mySlides {
     display: flex;
