@@ -23,6 +23,87 @@ img {
   max-width: 100%;
   height: auto; }
 
+.logo {
+  padding: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid;
+  border-bottom-color: #66697e; }
+
+.header {
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 667px;
+  width: 100%; }
+
+.menu {
+  display: none; }
+
+h1 {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.0;
+  text-align: center; }
+
+h2 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align: center; }
+
+.fritekst {
+  padding: 60px; }
+
+.findoutmore {
+  width: 50%;
+  height: 45px;
+  background-color: #e84545;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: small;
+  margin: auto;
+  padding: 14px; }
+
+.dropdownmenu {
+  position: absolute;
+  top: 35px;
+  right: 0; }
+
+.dropbtn {
+  background-color: #e84545;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-right: 20px; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 150px;
+  z-index: 1;
+  right: 0; }
+
+.dropdown-content a {
+  color: #ffffff;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  font-family: 'raleway', sans-serif; }
+
+.dropdown-content a:hover {
+  background-color: #008000; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
 .fa-pencil {
   color: #e84545; }
 
@@ -377,6 +458,68 @@ h5 {
     width: 50%;
     height: auto; } }
 @media screen and (min-width: 1200px) {
+  .dropbtn {
+    display: none; }
+
+  .header {
+    height: 750px; }
+
+  h1 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.0;
+    text-align: center;
+    font-size: 70px;
+    max-width: 60%; }
+
+  h2 {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    font-weight: lighter;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 55%; }
+
+  .logo {
+    padding-left: 19%;
+    position: relative; }
+
+  .menu {
+    display: inline-block;
+    position: absolute;
+    left: 51%;
+    font-size: 80%;
+    top: 30px;
+    color: #66697e;
+    right: 17%; }
+
+  a {
+    color: lightgray;
+    text-decoration: none;
+    font-family: 'raleway', sans-serif; }
+
+  a:hover {
+    color: #ffffff; }
+
+  li {
+    display: inline;
+    list-style-type: none; }
+
+  ul li {
+    display: inline-block;
+    padding: 0px 15px; }
+
+  .menu ul li {
+    display: inline-block;
+    justify-content: space-between; }
+
+  .fritekst {
+    padding: 170px; }
+
+  .findoutmore {
+    width: 11%; }
+
   .works_img {
     width: 150%; }
 

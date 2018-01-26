@@ -9,6 +9,9 @@
 
 //Variabel for sidens magenta farve
 $red: #e84545;
+$white: #ffffff;
+$sort: #000000;
+$green: #008000;
 
 body {
   margin: 0; // Ingen kanter i siden af browser
@@ -38,6 +41,101 @@ img {
 }
 
 // Header og forside - Adem
+//Header og forside - Adem
+.logo{
+  padding: 40px;
+  padding-left: 20px;
+  border-bottom: 1px solid;
+  border-bottom-color: #66697e;
+}
+
+.header{
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 667px;
+  width: 100%;
+}
+
+.menu{
+  display: none;
+}
+
+h1{
+  color: $white;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.0;
+  text-align: center;
+}
+
+h2{
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  font-weight: lighter;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.fritekst{
+  padding: 60px;
+}
+
+.findoutmore{
+  width: 50%;
+  height: 45px;
+  background-color: $red;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: small;
+  margin: auto;
+  padding: 14px;
+}
+
+.dropdownmenu{
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
+.dropbtn{
+  background-color: $red;
+  color: $white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: $sort;
+  min-width: 150px;
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: $white;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  font-family: 'raleway', sans-serif;
+}
+
+.dropdown-content a:hover{
+  background-color: $green;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
 
 //Features - Celina
 .fa-pencil{
@@ -489,7 +587,83 @@ h5 {
   }
 
 // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-  @media screen and (min-width: 1200px) {    //Works - Sabine
+  @media screen and (min-width: 1200px) {  
+    //Ardem
+    .dropbtn{
+      display: none;
+    }
+
+    .header{
+      height: 750px;
+    }
+
+    h1{
+      color: $white;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.0;
+      text-align: center;
+      font-size: 70px;
+      max-width: 60%;
+    }
+
+    h2{
+      color: $white;
+      font-family: 'Raleway', sans-serif;
+      font-size: x-large;
+      font-weight: lighter;
+      line-height: 1.5;
+      text-align: center;
+      max-width: 55%;
+    }
+
+    .logo{
+      padding-left: 19%;
+      position: relative;
+    }
+
+    .menu{
+      display: inline-block;
+      position: absolute;
+      left: 51%;
+      font-size: 80%;
+      top: 30px;
+      color: #66697e;
+      right: 17%;
+    }
+
+    a{
+      color: lightgray;
+      text-decoration: none;
+      font-family: 'raleway', sans-serif;
+    }
+
+    a:hover{
+      color: $white;
+    }
+
+    li{
+      display: inline;
+      list-style-type: none;
+    }
+
+    ul li{
+      display: inline-block;
+      padding: 0px 15px;
+    }
+
+    .menu ul li{
+      display: inline-block;
+      justify-content: space-between;
+    }
+
+    .fritekst{
+      padding: 170px;
+    }
+
+    .findoutmore{
+      width: 11%;
+    }
+
     //Works - Sabine
     .works_img{
       width: 150%;
